@@ -21,10 +21,9 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Moverse a carpeta SRC
-        run: cd src
-
       - name: Instalar dependencias (producción)
+        working-directory: ./home/runner/work/the-weather-app/the-weather-app/src/package.json
+
         run: npm ci --omit=dev
 
       - name: Paso de build (opcional)
