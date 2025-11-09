@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Moverse a carpeta SRC
+        run: cd src
+
       - name: Instalar dependencias (producción)
         run: npm ci --omit=dev
 
