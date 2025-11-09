@@ -22,8 +22,7 @@ jobs:
           node-version: '20'
 
       - name: Instalar dependencias (producción)
-        working-directory: ./home/runner/work/the-weather-app/the-weather-app/src/package.json
-
+        working-directory: src
         run: npm ci --omit=dev
 
       - name: Paso de build (opcional)
